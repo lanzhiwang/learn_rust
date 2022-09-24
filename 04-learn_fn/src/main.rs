@@ -3,8 +3,8 @@ fn other_fun() {
 }
 
 fn other_fun1(a: i32, b: u32) {
-//fn other_fun1(a, b) { //error
-    println!("a = {}, b = {}", a, b);
+    //fn other_fun1(a, b) { //error
+    println!("a = {:#?}, b = {:#?}", a, b); // a = -1, b = 2
 }
 
 fn other_fun2(a: i32, b: i32) -> i32 {
@@ -27,15 +27,15 @@ fn main() {
 
     let c: i32 = 9;
     let r: i32 = other_fun2(a, c);
-    println!("r = {}", r);
+    println!("r = {:#?}", r); // r = 8
 
     let r2: i32 = other_fun3(a, c);
-    println!("r2 = {}", r2);
+    println!("r2 = {:#?}", r2); // r2 = 8
 
     //语句是执行一些操作，但是不返回值的指令
-    //let y = 1; //语句，不返回值
-    //let x = (let y = 1);
-    
+    // let y = 1; //语句，不返回值
+    // let x = (let y = 1);
+
     //表达式会计算一些值
     let y = {
         let x = 1;
@@ -43,7 +43,7 @@ fn main() {
         x + 1
     };
 
-    println!("y = {}", y);
+    println!("y = {}", y); // y = 2
 
     println!("Hello, world!");
 }

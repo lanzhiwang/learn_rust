@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "learn_var"
+name = "learn_ref"
 version = "0.1.0"

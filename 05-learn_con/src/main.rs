@@ -1,5 +1,5 @@
 fn main() {
-    //if 
+    //if
     let y = 0;
     if y == 1 {
         println!("y = 1");
@@ -33,8 +33,8 @@ fn main() {
         6
         //"six" //error
     };
-    
-    println!("x = {}", x);
+
+    println!("x = {}", x);  // x = 5
 
     //loop
     let mut counter = 0;
@@ -47,28 +47,36 @@ fn main() {
         //counter = counter + 1;
         counter += 1;
     }
-    
+    println!("counter = {}", counter);  // counter = 10
+
     let result = loop {
         counter += 1;
         if counter == 20 {
-            break counter*2;
+            break counter * 2;
         }
     };
-    println!("result = {}", result);
+    println!("result = {}", result);  // result = 40
 
     //while
     let mut i = 0;
     while i != 10 {
         i += 1;
     }
-    println!("i = {}", i);
+    println!("i = {}", i);  // i = 10
 
     //for
     println!("+++++++++++++++");
-    let arr:[u32; 5] = [1, 2, 3, 4, 5];
+    let arr: [u32; 5] = [1, 2, 3, 4, 5];
     //for element in arr.iter() {
     for element in &arr {
         println!("element = {}", element);
     }
+    for element in arr.iter() {
+        println!("element = {}", element);
+    }
+    for element in arr.iter() {
+        println!("element = {}", element);
+    }
+
     println!("Hello, world!");
 }
